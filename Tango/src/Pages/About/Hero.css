@@ -1,0 +1,28 @@
+.Hero{
+    background:url("../../assets/AboutHero.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 77vh;
+    align-content: center;
+    object-fit: fill;
+}
+
+H2{
+    color: white;
+    font-size: 32px;
+}
+
+p{
+    color: white;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+span{
+    color: #2FC822;
+}
+
+.btn1{
+    color: white;
+    background: linear-gradient(rgb(255, 255, 255, 0.2), rgb(255 255 255 255 0.2));
+}

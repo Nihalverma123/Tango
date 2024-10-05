@@ -1,0 +1,47 @@
+*{
+    color: white;
+    line-height: 1.2 !important;
+}
+
+p{
+    font-size: 16px !important;
+    font-weight: 400;
+    
+}
+
+h2{
+    color: #2FC822 !important;
+}
+
+.one{
+    height: 75vh !important;
+    /* padding: 0px 0px !important; */
+}
+
+.one2{
+    height: 75vh !important;
+    padding: 0px 12px !important;  
+}
+
+.two{
+    height: 35vh !important;
+}
+
+
+@media screen and (max-width:768px) {
+    .one{
+        height: fit-content !important;
+        
+    }
+
+    .one2{
+        height: fit-content !important;
+        padding: 0px 0px !important;  
+    }
+    
+    
+    .two{
+        height:fit-content !important;
+       
+    }
+}

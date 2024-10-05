@@ -1,0 +1,32 @@
+img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgb(226, 224, 224);
+    transition: 5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+p{
+    color: black;
+
+}
+
+
+
+
+button {
+    background: #2FC822;
+    color: white !important;
+}
+
+
+
+/* .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-12 {
+    transition: transform 5s ease;
+}
+
+.col-lg-3:hover, .col-lg-4:hover, .col-lg-5:hover, .col-lg-8:hover, .col-12:hover {
+    transform: scale(1.1);
+} */

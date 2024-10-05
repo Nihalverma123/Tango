@@ -1,0 +1,37 @@
+.Hero1{
+    background:url("../../assets/event2.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 77vh;
+    align-content: center;
+    object-fit: fill;
+}
+
+
+.Hero2{
+    background:url("../../assets/event3.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 77vh;
+    align-content: center;
+    object-fit: fill;
+}
+
+
+.Hero3{
+    background:url("../../assets/event4.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 77vh;
+    align-content: center;
+    object-fit: fill;
+}
+
+.Hero4{
+    background:url("../../assets/event5.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 77vh;
+    align-content: center;
+    object-fit: fill;
+}
