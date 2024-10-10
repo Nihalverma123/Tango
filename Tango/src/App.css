@@ -30,3 +30,9 @@ button {
 .col-lg-3:hover, .col-lg-4:hover, .col-lg-5:hover, .col-lg-8:hover, .col-12:hover {
     transform: scale(1.1);
 } */
+.color{
+    color: black;
+  margin-top: -5px;
+   text-wrap: wrap;
+    word-break: break-all;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom'; // Import HashRouter
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <>
+    <Router>
       <div className="Headmain">
         <div className="blank"></div>
 
@@ -172,8 +172,6 @@ function Header() {
         </div>
       )}
 
-      
-
       {/* Sign-Up Form Modal */}
       {showSignUp && (
         <div className="modal show" style={{ display: 'block', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
@@ -218,7 +216,7 @@ function Header() {
           </div>
         </div>
       )}
-    </>
+    </Router>
   );
 }
 
