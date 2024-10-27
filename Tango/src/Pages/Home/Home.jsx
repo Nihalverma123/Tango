@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '../../Component/Hero/Hero';
 
-
 import Organic from '../../Component/Organic-manure/Organic';
 import Service from '../../Component/Service/Service';
 import About from '../../Component/About/AboutUs';
@@ -17,8 +16,11 @@ function Home() {
       <Organic />
       <Service />
       <About />
-      <Product />
-      <Team />
+      
+     <Product />
+      
+      
+      {/* <Team /> */}
       <JoinTeam />
 
     </>

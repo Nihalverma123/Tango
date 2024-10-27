@@ -12,7 +12,7 @@ function ProductSearch({ onCategoryChange }) {
       </li>
       <li>
         <button className="btn btn-outline-success text-dark" onClick={() => onCategoryChange('Fruits')}>
-          Fruits
+        Diry Product
         </button>
       </li>
       <li>
@@ -22,12 +22,12 @@ function ProductSearch({ onCategoryChange }) {
       </li>
       <li>
         <button className="btn btn-outline-success text-dark" onClick={() => onCategoryChange('Fertilizers')}>
-          Fertilizers
+        Jaivik Khad
         </button>
       </li>
       <li>
         <button className="btn btn-outline-success text-dark" onClick={() => onCategoryChange('Seeds')}>
-          Seeds
+        Organic Manure
         </button>
       </li>
     </ul>

@@ -15,7 +15,7 @@ function EventItem() {
         <div className="container py-3">
           <h2 className="text-center">Events</h2>
           <p className="text-center text-black">
-            Targuawan Agro hosts a variety of events throughout the year, focused
+            Targuwan Agro hosts a variety of events throughout the year, focused
             on promoting sustainable farming and organic agriculture. These
             events include workshops, farmer training sessions, and conferences
             where experts share the latest innovations in eco-friendly farming
@@ -31,7 +31,7 @@ function EventItem() {
       <div className="Hero1">
         <div className="container">
         <p className="fs-3 text-center">
-          Targuawan Agro’s manure function showcases the process of creating organic manure, offering hands-on demonstrations and expert insights into sustainable soil enrichment techniques.
+          Targuwan Agro’s manure function showcases the process of creating organic manure, offering hands-on demonstrations and expert insights into sustainable soil enrichment techniques.
           </p>
         </div>
       </div>
@@ -41,7 +41,7 @@ function EventItem() {
       <div className="Hero2">
         <div className="container">
         <p className="fs-3 text-center">
-          Targuawan Agro events promote sustainable farming through workshops, training, and knowledge-sharing, empowering farmers with eco-friendly agricultural practices
+          Targuwan Agro events promote sustainable farming through workshops, training, and knowledge-sharing, empowering farmers with eco-friendly agricultural practices
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ function EventItem() {
       <div className="Hero3">
         <div className="container">
           <p className="fs-3 text-center">
-          Targuawan Agro’s manure function showcases the process of creating organic manure, offering hands-on demonstrations and expert insights into sustainable soil enrichment techniques.
+          Targuwan Agro’s manure function showcases the process of creating organic manure, offering hands-on demonstrations and expert insights into sustainable soil enrichment techniques.
           </p>
         </div>
       </div>

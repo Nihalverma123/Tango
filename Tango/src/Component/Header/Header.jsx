@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { HashRouter as Router, Link } from 'react-router-dom'; // Import HashRouter
+import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from "../../assets/logo.png";
+import farmer from "../../assets/Farmer1.png";
 
 function Header() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for the dropdown
 
   const handleLoginClick = () => {
     setShowLogin(true);
@@ -20,8 +22,13 @@ function Header() {
     setShowLogin(false);
   };
 
+  // Function to toggle the dropdown
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
-    <Router>
+    <>
       <div className="Headmain">
         <div className="blank"></div>
 
@@ -70,21 +77,6 @@ function Header() {
                       className="bi bi-cart"
                       style={{ color: 'green', fontSize: '30px' }}
                     ></i>
-
-                    <button
-                      className="btn btn-outline-success text-dark mx-2"
-                      type="button"
-                      onClick={handleLoginClick}
-                    >
-                      Login
-                    </button>
-                    <button
-                      className="btn btn-success"
-                      type="button"
-                      onClick={handleSignUpClick}
-                    >
-                      Sign Up
-                    </button>
                   </form>
                 </div>
               </div>
@@ -113,9 +105,26 @@ function Header() {
                   <li className="nav-item">
                     <Link className="nav-link" to="/">Home</Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/about">About</Link>
+
+                  {/* Dropdown Menu for About Section */}
+                  <li className="nav-item dropdown">
+                    <Link 
+                      className="nav-link dropdown-toggle" 
+                      to="/about" 
+                      id="navbarDropdown" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false"
+                    >
+                      About
+                    </Link>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><Link className="dropdown-item" to="/companyhestory">About Company</Link></li>
+                      <li><Link className="dropdown-item" to="/ourteam" onClick={toggleDropdown}>Key member of organic devision</Link></li>
+                      {/* <li><Link className="dropdown-item" to="/about/vision">Our Vision</Link></li> */}
+                    </ul>
                   </li>
+
                   <li className="nav-item">
                     <Link className="nav-link" to="/gallery">Gallery</Link>
                   </li>
@@ -128,12 +137,22 @@ function Header() {
                   <li className="nav-item">
                     <Link className="nav-link" to="/event">Events</Link>
                   </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/productheader">Order Now</Link>
+                  </li>
                 </ul>
               </div>
             </div>
           </nav>
         </div>
       </div>
+
+      {/* Meet the Team Section */}
+      {/* {isDropdownOpen && (
+       
+         
+       
+      )} */}
 
       {/* Login Form Modal */}
       {showLogin && (
@@ -216,7 +235,7 @@ function Header() {
           </div>
         </div>
       )}
-    </Router>
+    </>
   );
 }
 
